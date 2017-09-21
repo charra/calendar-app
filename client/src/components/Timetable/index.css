@@ -1,0 +1,63 @@
+.timetable {
+  position: relative;
+  width: 250px;
+  height: 60vh;
+  margin: 0 auto;
+}
+.timetable .time-point {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  font-weight: 300;
+  font-size: 12px;
+}
+.timetable .time-point.big {
+  font-size: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.timetable .events-group {
+  position: absolute;
+  z-index: 1;
+  left: 50px;
+  width: 200px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.timetable .events-group .event {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  border-left: 2px solid #6e9ecf;
+  padding: 3px 5px;
+  background-color: #e2ecf5;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.timetable .events-group .event .btn-remove::before {
+  content: '+';
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 16px;
+  height: 16px;
+  background-color: #CFCFCF;
+  transform: rotate(45deg);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0;
+}
+.timetable .events-group .event:hover .btn-remove::before {
+  opacity: 0.9;
+}
+
+.button-container {
+  position: relative;
+  margin: 50px auto;
+  text-align: center;
+}

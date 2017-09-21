@@ -1,0 +1,112 @@
+.container {
+  display: block;
+  height: 100%;
+  /* padding: 25% 0; */  
+}
+
+.header {
+	margin-bottom: 20px;	
+}
+
+.header h1 {
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.header .sub-title {
+  margin: 4px 0 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.input-event {
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.input-event > div {
+  margin: auto;
+  min-width: 60vw;
+}
+
+
+
+input::-webkit-input-placeholder, button {
+  font-family: 'roboto', sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.input {
+  width: 95%;
+  display: block;
+  border: none;
+  padding: 14px 0;
+  border-bottom: solid 1px #537494;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  -o-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #2C3F52 4%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(96%, rgba(255, 255, 255, 0)), color-stop(4%, #1abc9c));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #2C3F52 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #2C3F52 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #2C3F52;
+}
+.input:focus, .input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+.input:focus::-webkit-input-placeholder, .input:valid::-webkit-input-placeholder {
+  color: #537494;
+  font-size: 11px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  visibility: visible !important;
+}
+
+.button {
+  border: none;
+  background: #6E9ECF;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 95%;
+  color: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+}
+.button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.appbar {
+  height: 60px;
+  background:  #6E9ECF;
+  width: 250px;
+  min-width: 100%;
+  margin: 0 auto;
+  text-align: right;
+  padding: 18px 17px;
+  box-sizing: border-box;
+}
+
+.appbar-link {
+  color: white;
+}
+
+* {
+  text-decoration: none;
+}

@@ -1,0 +1,34 @@
+{
+  "name": "new3",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001/",
+  "dependencies": {
+    "history": "^4.7.2",
+    "moment": "^2.18.1",
+    "mongoose": "^4.10.5",
+    "muicss": "^0.9.25",
+    "react": "^15.5.4",
+    "react-confirm": "^0.1.16",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "next",
+    "react-scripts": "1.0.13",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": ".",
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
+  }
+}
